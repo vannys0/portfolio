@@ -69,6 +69,20 @@ nav > div > a,
   transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+#projects > div {
+  gap: 20px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#projects > div > div {
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+#projects > div > div > img {
+  width: 100%;
+}
 #contact > div {
   display: grid;
   margin-top: 30px;
@@ -116,6 +130,13 @@ nav > div > a,
   }
   #skills > div {
     gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  #projects {
+    height: auto;
+    padding: 20px;
+  }
+  #projects > div {
     grid-template-columns: 1fr;
   }
   #contact {

@@ -2,6 +2,8 @@ import React from "react";
 import "./style.css";
 import Navbar from "./Navbar";
 import Prof from "./assets/prof.jpg";
+import Lepo from "./assets/login.png";
+import List from "./assets/list.png";
 
 function Profile() {
   return (
@@ -73,6 +75,30 @@ function Profile() {
       </section>
       <section id="projects">
         <h4 className="align-self-center">Projects</h4>
+        <div>
+          <div>
+            <img src={Lepo} alt="" />
+            <div className="d-flex flex-column p-3">
+              <h6>e-Leporidae</h6>
+              <p>
+                e-Leporidae is a platform that helps rabbit owners responsibly
+                rehome their rabbits by connecting them with caring adopters.
+                What sets it apart is the option to use agricultural products as
+                a form of exchange or payment, promoting inclusivity and
+                sustainability. With e-Leporidae, clients can ensure their
+                rabbits find safe homes while supporting local communities.
+              </p>
+              <div className="d-flex gap-2">
+                <span className="badge text-bg-info">ReactJS</span>
+                <span className="badge text-bg-primary">Bootstrap</span>
+                <span className="badge text-bg-warning">NodeJS</span>
+                <span className="badge text-bg-danger">MySQL</span>
+              </div>
+            </div>
+          </div>
+          <div></div>
+          <div></div>
+        </div>
       </section>
       <section id="contact">
         <h4 className="align-self-center">Get in touch</h4>
