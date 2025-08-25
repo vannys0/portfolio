@@ -1,13 +1,46 @@
-import React from "react";
 import "./style.css";
 import Navbar from "./Navbar";
 import Prof from "./assets/prof.jpg";
 import Lepo from "./assets/login.png";
 import List from "./assets/list.png";
+import React, { useEffect, useState } from "react";
 
 function Profile() {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    const toggleVisibility = () => {
+      if (window.scrollY > 300) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+    };
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="main-container">
+      {show && (
+        <span
+          onClick={scrollToTop}
+          className="up-btn"
+          style={{
+            bottom: "30px",
+            right: "30px",
+            zIndex: 1000,
+          }}
+        >
+          <i class="bi bi-chevron-double-up"></i>
+        </span>
+      )}
+
       <Navbar />
       <section className="d-flex" id="home">
         <img src={Prof} alt="" />
@@ -91,6 +124,7 @@ function Profile() {
               <div className="d-flex gap-2">
                 <span className="badge text-bg-info">ReactJS</span>
                 <span className="badge text-bg-primary">Bootstrap</span>
+                <span className="badge text-bg-info">Css</span>
                 <span className="badge text-bg-warning">NodeJS</span>
                 <span className="badge text-bg-danger">MySQL</span>
               </div>
