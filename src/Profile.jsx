@@ -43,7 +43,7 @@ function Profile() {
 
       <Navbar />
       <section className="d-flex" id="home">
-        <img src={Prof} alt="" />
+        <img loading="lazy" src={Prof} alt="" />
         <div>
           <h2>Ivan Bengcolado</h2>
           <h5>Frontend Developer</h5>
@@ -110,7 +110,7 @@ function Profile() {
         <h4 className="align-self-center">Projects</h4>
         <div>
           <div>
-            <img src={Lepo} alt="" />
+            <img loading="lazy" src={Lepo} alt="" />
             <div className="d-flex flex-column p-3">
               <h6>e-Leporidae</h6>
               <p>
@@ -131,7 +131,7 @@ function Profile() {
             </div>
           </div>
           <div>
-            <img src={Intrams} alt="" />
+            <img loading="lazy" src={Intrams} alt="" />
             <div className="d-flex flex-column p-3">
               <h6>e-Intrams (Ongoing for development)</h6>
               <p>
