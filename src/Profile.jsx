@@ -2,7 +2,7 @@ import "./style.css";
 import Navbar from "./Navbar";
 import Prof from "./assets/prof.jpg";
 import Lepo from "./assets/login.png";
-import List from "./assets/list.png";
+import Intrams from "./assets/intrams.png";
 import React, { useEffect, useState } from "react";
 
 function Profile() {
@@ -130,7 +130,28 @@ function Profile() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div>
+            <img src={Intrams} alt="" />
+            <div className="d-flex flex-column p-3">
+              <h6>e-Intrams (Ongoing for development)</h6>
+              <p>
+                e-Intrams is a digital platform designed to help schools
+                efficiently manage intramural events. It allows administrators
+                to organize teams, schedules, and game results in one system
+                while providing students and staff with easy access to event
+                updates. With automated tracking and streamlined coordination,
+                E-Intrams reduces manual work and ensures a smooth, engaging
+                intramural experience for the whole school community.
+              </p>
+              <div className="d-flex gap-2">
+                <span className="badge text-bg-info">ReactJS</span>
+                <span className="badge text-bg-primary">Bootstrap</span>
+                <span className="badge text-bg-info">Css</span>
+                <span className="badge text-bg-warning">NodeJS</span>
+                <span className="badge text-bg-danger">MySQL</span>
+              </div>
+            </div>
+          </div>
           <div></div>
         </div>
       </section>
@@ -154,11 +175,11 @@ function Profile() {
             <form className="d-flex flex-column gap-2">
               <h4 className="align-self-center">Message me</h4>
               <label htmlFor="">Email</label>
-              <input type="text" className="form-control" />
+              <input type="email" className="form-control" required />
               <label htmlFor="">Subject</label>
-              <input type="text" className="form-control" />
+              <input type="text" className="form-control" required />
               <label htmlFor="">Message</label>
-              <textarea type="text" className="form-control" />
+              <textarea type="text" className="form-control" required />
               <button
                 type="submit"
                 className="btn btn-primary align-self-end mt-1"
