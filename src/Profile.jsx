@@ -3,6 +3,8 @@ import Navbar from "./Navbar";
 import Prof from "./assets/prof.jpg";
 import Lepo from "./assets/login.png";
 import Intrams from "./assets/intrams.png";
+import Cbsua from "./assets/cbsua.png";
+import Shs from "./assets/shs.png";
 import React, { useEffect, useState } from "react";
 
 function Profile() {
@@ -62,7 +64,24 @@ function Profile() {
       <section id="education">
         <h4 className="align-self-center">Education</h4>
         <div>
-          <div></div>
+          <div>
+            <img src={Cbsua} alt="No Image" />
+            <div>
+              <h4>Bachelor of Scinece in Information Technology</h4>
+              <span>Central Bicol State University of Agriculture</span>
+              <br />
+              <span>2023 - 2024</span>
+            </div>
+          </div>
+          <div>
+            <img src={Shs} alt="No Image" />
+            <div>
+              <h4>Computer System Servicing</h4>
+              <span>Sta. Lutgarda National High School</span>
+              <br />
+              <span>2017 - 2018</span>
+            </div>
+          </div>
         </div>
       </section>
       <section id="skills">
